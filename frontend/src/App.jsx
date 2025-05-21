@@ -106,9 +106,9 @@ function App() {
             <>
               Alright! <br/>
               <br />
-              Don't worry, your rant was entirely encrypted end-to-end so I won't be able to read it even if I wanted to. <br />
+              Don't worry, this rant is being stored nowhere. They're literally being turned into fairy dust. <br />
               <br />
-              Keep a tab on your mail for something tasty soon :P
+              Hope you feel better (or worse ¬.¬) soon!
             </>
           }
           onClose={closeModal}
