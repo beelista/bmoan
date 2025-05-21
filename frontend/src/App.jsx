@@ -106,7 +106,7 @@ function App() {
             <>
               Alright! <br/>
               <br />
-              Don't worry, this rant is being stored nowhere. They're literally being turned into fairy dust. <br />
+              Don't worry, this rant isn't being stored anwyhere. It's prolly already been turned to fairy dust by now. <br />
               <br />
               Hope you feel better (or worse ¬.¬) soon!
             </>
