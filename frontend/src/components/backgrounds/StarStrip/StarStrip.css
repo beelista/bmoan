@@ -1,0 +1,54 @@
+/* Star background stays behind */
+.landing-stars-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Star image styles */
+.landing-star {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.landing-star[src*="_filled.png"] {
+  filter: drop-shadow(0 0 4px #f0e68c);
+}
+
+.shooting-star {
+  animation: shootingStarMove 10s linear forwards;
+  transform-origin: center center;
+  transform: rotate(75deg);
+  z-index: 10; /* on top */
+}
+
+@keyframes shootingStarMove {
+  from {
+    transform: translate(0, 0) rotate(75deg);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-150vw, 150vh) rotate(75deg);
+    opacity: 0;
+  }
+}
+
+/* On smaller screens, make the angle less steep */
+@media (max-width: 600px) {
+  @keyframes shootingStarMove {
+    from {
+      transform: translate(0, 0) rotate(55deg); /* rotate less for shallower angle */
+      opacity: 1;
+    }
+    to {
+      transform: translate(-200vw, 70vh) rotate(55deg);
+      opacity: 0;
+    }
+  }
+}
+
+

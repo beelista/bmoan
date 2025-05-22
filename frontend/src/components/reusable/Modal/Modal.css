@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(186, 145, 255, 0.7); /* soft purple translucent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  user-select: none;
+  padding: 1rem;
+}
+
+/* Modal box */
+.modal-box {
+  background-color: #f3e8ff;
+  border: 4px dashed #a259ff;
+  border-radius: 16px;
+  padding: 2rem 2rem;
+  text-align: center;
+  max-width: 100%;
+  max-height: 80vh;
+  box-shadow: 0 0 15px rgba(162, 89, 255, 0.8);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message wrapper allows scroll */
+.modal-message-scroll {
+  overflow-y: auto;
+  max-height: 50vh;
+  padding-right: 4px;
+}
+
+/* Text inside modal */
+.modal-message {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #a259ff;
+  margin-bottom: 1.5rem;
+  white-space: pre-wrap;
+  text-align: left;
+  user-select: text;
+}
+
+/* Buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.modal-btn {
+  padding: 8px 16px;
+  background-color: #a259ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 13px;
+  height: 45px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+.modal-btn:hover {
+  background-color: #8236db;
+}
